@@ -10,7 +10,7 @@ import Skills from "./Skills"
 const MainDiv = () => {
    
     return (
-     <div className="space-y-10 bg-black text-white ">
+     <div className="space-y-20 bg-black text-white ">
         <Banner />
         <Skills />
         <MyProject />

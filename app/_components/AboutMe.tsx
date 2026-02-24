@@ -23,17 +23,18 @@ const AboutMe = () => {
     }
 
     return (
-        <div className='px-5'>
+        <div id='About' className='px-5'>
             <div className="flex justify-center">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className='my-10 text-2xl font-bold'
+                    className=' mb-20 text-5xl md:text-7xl font-extrabold'
                 >
                     About me
                 </motion.h2>
             </div>
+            
 
             <div className="grid lg:grid-cols-2 gap-10 max-w-7xl mx-auto">
 
@@ -176,7 +177,7 @@ const AboutMe = () => {
                 >
                     <h2 className='text-4xl font-bold'>Beyond the code</h2>
 
-                    <div className="space-y-10 border-l border-neutral-700 ml-4">
+                    <div className="space-y-10  border-l border-neutral-700 ml-4">
                         {[
                             "Founder of oldmoneythrifts.pk",
                             "Managed Ryfa Olympics (2023–2024)",
@@ -192,7 +193,7 @@ const AboutMe = () => {
                                 className="relative pl-8"
                             >
                                 <div className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-neutral-300" />
-                                <h2 className="text-2xl font-semibold text-white">
+                                <h2 className=" font-semibold text-white ">
                                     {text}
                                 </h2>
                             </motion.div>

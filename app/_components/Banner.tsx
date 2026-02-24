@@ -12,12 +12,12 @@ import { motion } from "framer-motion"
 const Banner = () => {
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Project", href: "/#MyProject" },
-    { name: "About", href: "/about" },
-    { name: "Contacts", href: "/contact" },
-    { name: "Instagram", href: "https://instagram.com/yourprofile", icon: <FaInstagram size={25} /> },
-    { name: "Github", href: "https://github.com/yourprofile", icon: <FaGithub size={25} /> },
-    { name: "Linkedin", href: "https://linkedin.com/in/yourprofile", icon: <CiLinkedin size={25} /> },
+    { name: "Project", href: "#Projects" },
+    { name: "About", href: "#About" },
+    { name: "Contacts", href: "#Contact" },
+    { name: "Instagram", href: "https://www.instagram.com/hamxa_sheix/?utm_source=ig_web_button_share_sheet", icon: <FaInstagram size={25} /> },
+    { name: "Github", href: "https://github.com/HamzaAdeel05?tab=repositories", icon: <FaGithub size={25} /> },
+    { name: "Linkedin", href: "https://www.linkedin.com/in/hamza-adeel-15632a365/", icon: <CiLinkedin size={25} /> },
   ]
 
   const containerVariants:any = {
@@ -45,17 +45,17 @@ const Banner = () => {
         alt="Background Image"
         fill
         priority
-        className="object-cover"
+        className="object-cover "
       />
 
-      <div className="absolute inset-0 text-white max-w-7xl mx-auto">
+      <div className="absolute inset-0 text-white max-w-7xl mx-auto z-10">
         
         {/* Navbar */}
         <motion.div 
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="px-10 py-7"
+          className="px-10 py-7 relative z-50"
         >
           <Menu className="md:hidden" />
 
@@ -65,10 +65,12 @@ const Banner = () => {
                 key={index}
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 300 }}
+                className=""
+
               >
                 <Link
                   href={link.href}
-                  className="hover:text-black text-sm lg:text-xl font-medium hover:bg-neutral-300 py-2 rounded-2xl px-2 transition-colors"
+                  className="hover:text-black text-sm lg:text-xl w-full font-medium hover:bg-neutral-300 py-2 rounded-2xl px-2 transition-colors"
                 >
                   {link.icon ? link.icon : link.name}
                 </Link>
@@ -104,7 +106,7 @@ const Banner = () => {
               </motion.p>
 
               <motion.div variants={itemVariants}>
-                <Link className="underline font-bold text-xl" href="/projects">
+                <Link className="underline font-bold text-xl" href="#Projects">
                   View My Projects
                 </Link>
               </motion.div>

@@ -14,7 +14,7 @@ import { motion } from 'framer-motion'
 
 const MyProject = () => {
 
-    const container:any = {
+    const container: any = {
         hidden: {},
         visible: {
             transition: {
@@ -23,7 +23,7 @@ const MyProject = () => {
         }
     }
 
-    const fadeUp:any = {
+    const fadeUp: any = {
         hidden: { opacity: 0, y: 40 },
         visible: {
             opacity: 1,
@@ -36,13 +36,13 @@ const MyProject = () => {
     }
 
     return (
-        <div className='max-w-7xl mx-auto space-y-8 px-5'>
+        <div id='Projects' className='max-w-7xl mx-auto space-y-8 px-5'>
             <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
             >
-                <h2 className='text-3xl font-bold'>My Creative Work</h2>
+                <h2 className='text-5xl mb-20 md:text-7xl font-extrabold text-center pb-5'>My Creative Work</h2>
             </motion.div>
 
             <motion.div
@@ -86,64 +86,74 @@ const MyProject = () => {
                                 <div className="flex flex-wrap gap-3">
 
 
-                                                            {p.tech.next && (
-                                                                <span className="px-3 py-1 text-[13px] font-bold text-white bg-blue-800 rounded-xl">
-                                                                    NextJS
-                                                                </span>
-                                                            )}
-                                                            {p.tech.tailwind && (
-                                                                <span className="px-3 py-1 text-[13px] font-bold text-white bg-cyan-500 rounded-xl">
-                                                                    Tailwind
-                                                                </span>
-                                                            )}
+                                    {p.tech.next && (
+                                        <span className="px-3 py-1 text-[13px] font-bold text-white bg-blue-800 rounded-xl">
+                                            NextJS
+                                        </span>
+                                    )}
+                                    {p.tech.tailwind && (
+                                        <span className="px-3 py-1 text-[13px] font-bold text-white bg-cyan-500 rounded-xl">
+                                            Tailwind
+                                        </span>
+                                    )}
 
-                                                            {p.tech.nest && (
-                                                                <span className="px-3 py-1 text-[13px] font-bold text-white bg-red-600 rounded-xl">
-                                                                    NestJS
-                                                                </span>
-                                                            )}
-                                                            {p.tech.typescript && (
-                                                                <span className="px-3 py-1 text-[13px] font-bold text-white bg-blue-600 rounded-xl">
-                                                                    Typescript
-                                                                </span>
-                                                            )}
+                                    {p.tech.nest && (
+                                        <span className="px-3 py-1 text-[13px] font-bold text-white bg-red-600 rounded-xl">
+                                            NestJS
+                                        </span>
+                                    )}
+                                    {p.tech.typescript && (
+                                        <span className="px-3 py-1 text-[13px] font-bold text-white bg-blue-600 rounded-xl">
+                                            Typescript
+                                        </span>
+                                    )}
 
-                                                            {p.tech.stripe && (
-                                                                <span className="px-3 py-1 text-[13px] font-bold text-white bg-yellow-600 rounded-xl">
-                                                                    Stripe API
-                                                                </span>
-                                                            )}
+                                    {p.tech.stripe && (
+                                        <span className="px-3 py-1 text-[13px] font-bold text-white bg-yellow-600 rounded-xl">
+                                            Stripe API
+                                        </span>
+                                    )}
 
-                                                            {p.tech.mongo && (
-                                                                <span className="px-3 py-1 text-[13px] font-bold text-white bg-green-600 rounded-xl">
-                                                                    MongoDB
-                                                                </span>
-                                                            )}
+                                    {p.tech.mongo && (
+                                        <span className="px-3 py-1 text-[13px] font-bold text-white bg-green-600 rounded-xl">
+                                            MongoDB
+                                        </span>
+                                    )}
 
-                                                            {p.tech.cloudinary && (
-                                                                <span className="px-3 py-1 text-[13px] font-bold text-white bg-purple-600 rounded-xl">
-                                                                    Cloudinary
-                                                                </span>
-                                                            )}
-                                                        </div>
+                                    {p.tech.cloudinary && (
+                                        <span className="px-3 py-1 text-[13px] font-bold text-white bg-purple-600 rounded-xl">
+                                            Cloudinary
+                                        </span>
+                                    )}
+                                </div>
 
                                 <div className="flex gap-2">
                                     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
-                                        <Button variant={'secondary'}>
-                                            Live Demo
-                                        </Button>
+                                        <Dialog>
+                                            <DialogTrigger>
+                                                <Button variant={'secondary'}>
+                                                    Live Demo
+                                                </Button>
+                                            </DialogTrigger>
+                                            <DialogContent className='text-center font-bold text-4xl'>
+                                                Still working on it😅
+                                            </DialogContent>
+                                        </Dialog>
                                     </motion.div>
 
                                     <Dialog>
                                         <DialogTrigger asChild>
-                                            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
-                                                <Button variant={'ghost'}>
+                                            <motion.div
+                                                whileHover={{ scale: 1.05 }}
+                                                whileTap={{ scale: 0.97 }}
+                                            >
+                                                <Button variant="ghost">
                                                     View Details
                                                 </Button>
                                             </motion.div>
                                         </DialogTrigger>
 
-                                        <DialogContent className="sm:max-w-6xl overflow-x-auto text-white bg-neutral-900 border">
+                                        <DialogContent className="w-full max-w-[95vw] md:max-w-6xl max-h-[90vh] overflow-y-auto text-white bg-neutral-900 border">
 
                                             <motion.div
                                                 initial={{ opacity: 0, y: 30 }}
@@ -151,36 +161,42 @@ const MyProject = () => {
                                                 transition={{ duration: 0.4 }}
                                                 className="space-y-6"
                                             >
-                                                <h2 className='font-bold text-2xl'>{p.title}</h2>
+                                                <h2 className="font-bold text-2xl">{p.title}</h2>
 
-                                                <div className="grid grid-cols-2 gap-5">
+                                                {/* Responsive Grid */}
+                                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                                                    {/* LEFT SIDE */}
                                                     <div>
-                                                        <Carousel className="relative w-xs sm:w-lg">
+
+                                                        {/* Carousel */}
+                                                        <Carousel className="relative w-full max-w-md mx-auto">
                                                             <CarouselContent>
                                                                 {p.images.map((I, index) => (
                                                                     <CarouselItem key={index}>
-                                                                        <Card className='bg-neutral-950 border-neutral-600 p-0'>
+                                                                        <Card className="bg-neutral-950 border-neutral-600 p-0">
                                                                             <CardContent className="flex items-center justify-center py-5">
                                                                                 <Image
-                                                                                    alt='project'
+                                                                                    alt="project"
                                                                                     src={I}
                                                                                     width={500}
                                                                                     height={300}
-                                                                                    className='object-cover rounded-lg'
+                                                                                    className="w-full h-auto object-cover rounded-lg"
                                                                                 />
                                                                             </CardContent>
                                                                         </Card>
                                                                     </CarouselItem>
                                                                 ))}
                                                             </CarouselContent>
-                                                            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-black border-none" />
-                                                            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-black border-none" />
+
+                                                            <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 bg-black border-none" />
+                                                            <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 bg-black border-none" />
                                                         </Carousel>
 
-                                                        <h2 className='font-bold text-xl my-5'>Technologies</h2>
+                                                        {/* Technologies */}
+                                                        <h2 className="font-bold text-xl my-5">Technologies</h2>
+
                                                         <div className="flex flex-wrap gap-3">
-
-
                                                             {p.tech.next && (
                                                                 <span className="px-3 py-1 text-[13px] font-bold text-white bg-blue-800 rounded-xl">
                                                                     NextJS
@@ -191,7 +207,6 @@ const MyProject = () => {
                                                                     Tailwind
                                                                 </span>
                                                             )}
-
                                                             {p.tech.nest && (
                                                                 <span className="px-3 py-1 text-[13px] font-bold text-white bg-red-600 rounded-xl">
                                                                     NestJS
@@ -202,19 +217,16 @@ const MyProject = () => {
                                                                     Typescript
                                                                 </span>
                                                             )}
-
                                                             {p.tech.stripe && (
                                                                 <span className="px-3 py-1 text-[13px] font-bold text-white bg-yellow-600 rounded-xl">
                                                                     Stripe API
                                                                 </span>
                                                             )}
-
                                                             {p.tech.mongo && (
                                                                 <span className="px-3 py-1 text-[13px] font-bold text-white bg-green-600 rounded-xl">
                                                                     MongoDB
                                                                 </span>
                                                             )}
-
                                                             {p.tech.cloudinary && (
                                                                 <span className="px-3 py-1 text-[13px] font-bold text-white bg-purple-600 rounded-xl">
                                                                     Cloudinary
@@ -223,18 +235,35 @@ const MyProject = () => {
                                                         </div>
                                                     </div>
 
+                                                    {/* RIGHT SIDE */}
                                                     <div className="space-y-6">
-                                                        <h2 className='text-2xl font-bold'>Details</h2>
-                                                        <p className='font-sans text-neutral-300'>
+                                                        <h2 className="text-2xl font-bold">Details</h2>
+
+                                                        <p className="text-neutral-300">
                                                             {p.description}
                                                         </p>
-                                                        <Button variant={'secondary'}>
-                                                            Live Demo
-                                                        </Button>
+
+                                                        {/* Nested Dialog (Safe Version) */}
+                                                        <Dialog>
+                                                            <DialogTrigger  asChild>
+                                                                <div className="flex justify-center py-5">
+
+                                                                <Button variant="secondary" className='w-full py-6'>
+                                                                    Live Demo
+                                                                </Button>
+                                                                </div>
+                                                            </DialogTrigger>
+
+                                                            <DialogContent className="w-full max-w-md text-center text-white bg-neutral-900 border">
+                                                                <div className="text-2xl font-bold">
+                                                                    Still working on it 😅
+                                                                </div>
+                                                            </DialogContent>
+                                                        </Dialog>
                                                     </div>
+
                                                 </div>
                                             </motion.div>
-
                                         </DialogContent>
                                     </Dialog>
                                 </div>
