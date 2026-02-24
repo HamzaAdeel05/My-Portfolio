@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  basePath: '/My-Portfolio', 
   reactCompiler: true,
-   images: {
+  images: {
+    unoptimized: true,
     domains: ["res.cloudinary.com"],
   },
 };
