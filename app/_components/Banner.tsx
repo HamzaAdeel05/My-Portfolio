@@ -12,7 +12,7 @@ import { motion } from "framer-motion"
 const Banner = () => {
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Project", href: "/projects" },
+    { name: "Project", href: "/#MyProject" },
     { name: "About", href: "/about" },
     { name: "Contacts", href: "/contact" },
     { name: "Instagram", href: "https://instagram.com/yourprofile", icon: <FaInstagram size={25} /> },

@@ -8,19 +8,19 @@ import SpotifyPicture1 from '../app/Image/Spotify/image1.png'
 import SpotifyPicture2 from '../app/Image/Spotify/image3.png'
 import SpotifyPicture3 from '../app/Image/Spotify/image4.png'
 import SpotifyPicture4 from '../app/Image/Spotify/image2.png'
-import MapleBanner from '../app/Image/Maple 54/Screenshot 2026-02-19 120016.png'
-import MaplePicture1 from '../app/Image/Maple 54/2.png'
-import MaplePicture2 from '../app/Image/Maple 54/3.png'
-import MaplePicture3 from '../app/Image/Maple 54/4.png'
-import MaplePicture4 from '../app/Image/Maple 54/5.png'
+import MapleBanner from '../app/Image/Maple_54/Screenshot 2026-02-19 120016.png'
+import MaplePicture1 from '../app/Image/Maple_54/2.png'
+import MaplePicture2 from '../app/Image/Maple_54/3.png'
+import MaplePicture3 from '../app/Image/Maple_54/4.png'
+import MaplePicture4 from '../app/Image/Maple_54/5.png'
 import AiBanner from "../app/Image/Ai/1.png"
 import Ai1 from "../app/Image/Ai/2.png"
 import Ai2 from "../app/Image/Ai/3.png"
 import Ai3 from "../app/Image/Ai/4.png"
 import Ai4 from "../app/Image/Ai/5.png"
-import BlogBanner from "../app/Image/New folder/1.png"
-import Blog1 from "../app/Image/New folder/2.png"
-import Blog2 from "../app/Image/New folder/3.png"
+import BlogBanner from "../app/Image/Newfolder/1.png"
+import Blog1 from "../app/Image/Newfolder/2.png"
+import Blog2 from "../app/Image/Newfolder/3.png"
 
 export const Projects = [
   {
