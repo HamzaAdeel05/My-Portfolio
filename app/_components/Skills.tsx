@@ -52,7 +52,7 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold mb-10 ml-4"
+          className="md:text-7xl font-extrabold mb-20 ml-4  text-center text-5xl"
         >
           My Skills & Technologies
         </motion.h2>

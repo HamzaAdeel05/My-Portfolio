@@ -19,18 +19,18 @@ const Contact = () => {
     }
 
     return (
-        <div className=' max-w-7xl mx-auto space-y-6 pb-10 px-5'>
+        <div id='Contact' className=' max-w-7xl mx-auto space-y-6 pb-10 px-5'>
 
             <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className='font-bold text-5xl'
+                className='font-extrabold text-center mb-20 text-5xl md:text-7xl'
             >
                 Let's Connect
             </motion.h2>
 
-            <div className="grid md:grid-cols-4 gap-5">
+            <div className="md:grid md:grid-cols-4 gap-5 space-y-6">
 
                 {/* Main Contact Card */}
                 <motion.div
@@ -39,7 +39,7 @@ const Contact = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                     whileHover={{ y: -6 }}
-                    className="col-span-3 border rounded-2xl px-5 py-10 bg-neutral-900 transition-all"
+                    className="col-span-3 border h-full rounded-2xl px-5 py-10 bg-neutral-900 transition-all"
                 >
                     <div className="grid grid-cols-3 justify-center items-center">
 
@@ -102,7 +102,7 @@ const Contact = () => {
                     viewport={{ once: true }}
                     whileHover={{ y: -6 }}
                     transition={{ delay: 0.2 }}
-                    className="border rounded-2xl bg-neutral-900 p-5 space-y-4"
+                    className="border rounded-2xl bg-neutral-900 p-5 space-y-4 w-full"
                 >
                     <h2 className='font-bold text-xl '>My latest updates</h2>
                     <ul className='list-disc px-5 text-sm space-y-4 text-neutral-400'>
