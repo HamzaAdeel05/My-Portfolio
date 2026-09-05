@@ -6,7 +6,7 @@ import Image from "next/image"
 import Bg from "../Image/bg_skills.png"
 
 const Skills = () => {
- const skills = [
+const skills = [
   { id: 1, name: "React.js", category: "Frontend Mastery", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png" },
   { id: 2, name: "Next.js", category: "Backend & Logic", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDQOECl-WuoW-QRiiCFnWzdYmQU3zmb9J2IA&s" },
   { id: 3, name: "JavaScript", category: "Frontend Mastery", image: "https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" },
@@ -18,8 +18,27 @@ const Skills = () => {
   { id: 9, name: "Tailwind CSS", category: "Design & Tools", image: "https://images.seeklogo.com/logo-png/43/1/tailwind-css-logo-png_seeklogo-434090.png" },
   { id: 10, name: "Photoshop", category: "Design & Tools", image: "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" },
   { id: 11, name: "Cloudinary", category: "Cloud & Media", image: "https://cloudinary-res.cloudinary.com/image/upload/website/cloudinary_web_favicon.png" },
-  { id: 12, name: "TypeScript", category: "Language", image: "https://cdn-icons-png.flaticon.com/512/5968/5968381.png" }
-]
+  { id: 12, name: "TypeScript", category: "Language", image: "https://cdn-icons-png.flaticon.com/512/5968/5968381.png" },
+
+  { id: 13, name: "Python", category: "AI & Programming", image: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" },
+  { id: 14, name: "AI Agenting", category: "AI & Agentic AI", image: "https://cdn-icons-png.flaticon.com/512/4712/4712109.png" },
+  { id: 15, name: "LangChain", category: "AI & Agentic AI", image: "https://avatars.githubusercontent.com/u/126733545?s=200&v=4" },
+  { id: 16, name: "OpenAI API", category: "AI & Agentic AI", image: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" },
+  { id: 17, name: "LLM Integration", category: "AI & Agentic AI", image: "https://cdn-icons-png.flaticon.com/512/8637/8637099.png" },
+  { id: 18, name: "RAG", category: "AI & Agentic AI", image: "https://cdn-icons-png.flaticon.com/512/2103/2103633.png" },
+  { id: 19, name: "Streamlit", category: "AI & Agentic AI", image: "https://streamlit.io/images/brand/streamlit-mark-color.png" },
+  { id: 20, name: "Prompt Engineering", category: "AI & Agentic AI", image: "https://cdn-icons-png.flaticon.com/512/8637/8637099.png" },
+
+  { id: 21, name: "Git & GitHub", category: "Development Tools", image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" },
+  { id: 22, name: "REST APIs", category: "Backend & Logic", image: "https://cdn-icons-png.flaticon.com/512/2165/2165004.png" },
+  { id: 23, name: "JWT Authentication", category: "Backend & Logic", image: "https://jwt.io/img/pic_logo.svg" },
+  { id: 24, name: "Postman", category: "Development Tools", image: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
+
+  { id: 25, name: "Canva", category: "Design & Tools", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1mUW0pWXQjDz_Icb4dCAOkxPDbXMpi449el5dIStpUA&s=10" },
+  { id: 26, name: "CapCut", category: "Design & Tools", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgNOfgWhDwL2gwxtU1GbwJnrBj9OSunXoBd4KV1C4e8g&s=10" },
+
+  { id: 27, name: "Data Structures", category: "Analytical Core", image: "https://cdn-icons-png.flaticon.com/512/2103/2103633.png" }
+];
 
   const containerVariants = {
     hidden: { opacity: 0 },
